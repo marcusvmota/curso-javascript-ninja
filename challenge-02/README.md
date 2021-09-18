@@ -43,7 +43,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function tresLetras (a, b, c) {
-	if (a !== undefined || b === undefined || c === undefined) {
+	if (a === undefined || b === undefined || c === undefined) {
 		return "Preencha todos os valores corretamente!";
 	}
 
@@ -74,7 +74,7 @@ Crie uma função com as seguintes características:
 function threeArgs (x, y, z) {
   if (x !== undefined && y === undefined && z === undefined) {
     return x;
-  } else if (x !== undefined && y !== undefined && z === undefined) {
+  } else if (x == undefined && y !== undefined && z === undefined) {
     return x + y;
   } else if (x !== undefined && y !== undefined && z !== undefined) {
     return (x + y) / z;
